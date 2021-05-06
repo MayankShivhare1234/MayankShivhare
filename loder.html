@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            h1{
+                font-family: cursive;
+                text-align: center;
+                background-color: black;
+                color: red;
+            }
+            body{
+                background-color: red;
+            }
+            #loader{
+               width: 120px;
+               height: 120px;
+               border: black 15px solid;
+               border-top: gold 15px solid;
+               border-radius: 50% ; 
+               animation-name: loaderr ;
+               animation-duration: 1ms;
+               animation-iteration-count: infinite; 
+               animation-timing-function: linear ;
+               margin-top:  180px;
+               margin-left: 600px;   
+                }
+            @keyframes loaderr {
+                0%{
+                    transform: rotate(0deg);
+                }
+                100%{
+                    transform: rotate(360deg);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1> Loader </h1>
+        <div id="loader">  </div>
+    </body>
+</html>
