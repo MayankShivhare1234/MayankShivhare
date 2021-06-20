@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <script src="Sign.js"></script>
+       <style>
+           body{
+               background-image: url(https://static.doofinder.com/main-files/uploads/2020/05/gestion-tienda-fisica-y-online.jpg);
+               background-repeat: no-repeat;
+               background-size: 100% 100%;
+               text-align: center;
+               font-family: cursive;
+           }
+           form{
+               text-align: center;
+           }
+           input{
+               border-radius: 50px;
+               border-top: solid blue 7px;
+               border-bottom: yellow solid 7px;
+               border-left: red solid 7px;
+               border-right: green solid 7px;
+               height: 50px;
+               width: 190px;
+               font-family: cursive;
+               font-size: 20px;
+           }
+           .c{
+               font-size: 20px;
+           }
+           h1{
+               color: black;
+           }
+           input:hover{
+               box-shadow: -10px 7px 8px black;
+           }
+       </style>
+      
+    </head>
+    <body>
+        <h1> Fill This Form </h1>
+        <br><br><br>
+        <form action="body.html" onsubmit="return validate()" class="form">
+            <label>
+                <input type="text"     placeholder="UserName"            id="uname"   > <label id="label2"></label>     <br><br><br>
+            <input type="password" placeholder="Enter   Password"    id="pass"    > <label id="label1"></label>     <br><br><br>
+            <input type="password" placeholder="Confirm Password"    id="cpass"   >                                 <br><br><br>
+            <input type="email"    placeholder="Enter E-mail"                     >                                 <br><br><br>
+            <input type="text"     placeholder="Enter Contact No"                 >                                 <br><br><br>
+            </label>
+            <input type="checkbox"   class="c" id="cb"                                            > I accept T&C and privacy policy <br><br><br>
+            <input type="submit">
+        </form>
+    </body>
+</html>
